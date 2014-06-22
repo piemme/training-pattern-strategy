@@ -4,6 +4,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Client invoke Context class with instance of ConcreteStrategy
+ */
 public class ClientCheVuoleSapereLaTempMedia {
 	
 	public static void main(String[] args) {
@@ -12,8 +15,8 @@ public class ClientCheVuoleSapereLaTempMedia {
 	}
 	
 	public static Integer vorreiSapereLaTemperaturaMedia(List<Integer> temperature) {
-		TemperaturaMediaComeFunzioneSinusoidale tMediaSinusoidale = new TemperaturaMediaComeFunzioneSinusoidale();
-		CalcolatoreTemperature calcolatoreTMedia = new CalcolatoreTemperature(tMediaSinusoidale);
+		// Context class + ConcreteStrategy
+		CalcolatoreTemperature calcolatoreTMedia = new CalcolatoreTemperature(new TemperaturaMediaComeFunzioneSinusoidale());
 		return calcolatoreTMedia.calcolaTemperaturaMedia(temperature);
 	}
 	
