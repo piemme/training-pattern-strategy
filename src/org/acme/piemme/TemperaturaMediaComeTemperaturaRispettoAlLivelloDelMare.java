@@ -3,8 +3,10 @@ package org.acme.piemme;
 import java.util.List;
 
 /**
+ * ConcreteStrategy class
  * Implements the algorithm using the strategy interface
  */
+
 public class TemperaturaMediaComeTemperaturaRispettoAlLivelloDelMare  implements TemperaturaMedia {
 
 	@Override

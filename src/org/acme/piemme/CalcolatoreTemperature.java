@@ -3,8 +3,8 @@ package org.acme.piemme;
 import java.util.List;
 
 /**
- * Configured with a ConcreteStrategy object and maintains
- * a reference to a Strategy object
+ * Context class
+ * Configured with a ConcreteStrategy object and maintains a reference to a Strategy object
  *
  */
 public class CalcolatoreTemperature {
